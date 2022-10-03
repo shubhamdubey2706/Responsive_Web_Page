@@ -1,0 +1,410 @@
+@import "mixin";
+@import "var";
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+} 
+.main_container{    
+    width: 1274px;
+    height: 1800px;  
+}
+.header{   
+    width: 1270px;
+    height: 65px;
+    @include flex;
+    justify-content: $flex-prop2;
+    align-items: $align-items;
+    .header_1{ 
+        height: 60px;
+        width: 120px;
+        @include flex;
+        gap: 2px;
+        align-items: baseline;
+        .header_1_1{ 
+            border-radius: 80px;
+            height: 10px;
+            width: 10px;  
+            background-color: rgb(228, 85, 32);
+            margin-top: 20px;
+        }
+        .header_1_2{   
+            height: 10px;
+            width: 10px;
+            background-color: rgb(0, 174, 255);
+        }
+        .header_1_3{  
+            height: 30px;
+            width: 80px;
+            @include font_2;
+        }
+    }
+    .header_2{   
+        height: 60px;
+        width: 500px;
+        @include flex;
+        justify-content: $flex-prop2;
+        .inside_header_2{   
+            height: 10px;
+            padding: 12px;
+            display: table-cell;
+            vertical-align: bottom;
+            width: 58px;
+            @include font_2;
+            &:hover{
+                background-color: rgb(53, 188, 255);
+                color: white;
+                height: $ht;
+                width: 75px;
+           }
+        }
+    }
+    .header_3{  
+        height: 40px;
+        width: 85px;
+        padding-top: 3px;
+        @include font_2;
+        @include flex;
+        justify-content: center;
+        .inside_header_3{ 
+            height: 30px;  
+            width: 60px;
+        }
+        .inside_header_3_1{ 
+            height: 30px;
+            margin-top: px;
+            width: 35px;
+        }
+    }
+} 
+.body_container_1{  
+    height: 350px;
+    width: $width;
+    @include flex;
+    flex-direction: column;
+    justify-content: $flex-prop2;
+    background-color: $black-bg-color ;
+    .inside_body_container_1{  
+        height: 200px;
+        width:  $width;
+        @include flex_2;
+        justify-content: $flex-prop;
+    }
+    .inside_body_container_2{ 
+        height: 20px;
+        width: 200px;
+        @include flex;
+        justify-content:end;
+        margin-left: 900px;
+        gap: 3px;
+        .small_icon{
+            border: 1px solid darkgray;
+            height: 10px;
+            width: 10px;
+            border-radius: 10px;
+            background-color: darkgray;
+            &:hover{
+                background-color: aqua;
+           }
+        } 
+    }
+}
+.btn{
+    width: 70px;
+    height: 20px;
+    border-radius: 2px;
+    border: none;
+     background-color: $skyblue-color;
+    color: white;
+    text-align: $alignment;
+    margin-left: 92px;
+}
+.cont_big_text{
+    height:  $ht;
+    width:  $width;
+    text-align:$alignment;
+    font-size: 35px;
+    margin-top: 15px;
+    @include font;
+    color: rgba(255, 255, 255, 0.655);
+}
+.cont_small_text{  
+    height:  $ht;
+    width:  $width;
+    text-align: $alignment;
+    @include font;
+    color: rgba(255, 255, 255, 0.514);
+}
+.cont_btn{  
+    height: 30px;
+    width: 160px; 
+    text-align:$alignment;
+    margin-left: 550px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.779);
+    padding: 1px;
+    @include font;
+    background-color: rgb(250, 147, 83);
+}
+.body_container_2{ 
+    height: 220px ;
+    width:  $width;
+    @include flex_2;
+    align-items:  $align-items;
+}
+.inside_body_container_2_1{    
+    height: 26px;
+    width: 123px;
+    text-align: $alignment;
+    margin-left: 13px;
+    padding: 0px;
+    margin-top: -15px;
+    background-color: $skyblue-color;
+    border-radius: 3px;
+    color: white;
+    @include font;
+}
+.inside_body_container_2_2{   
+    height: 230px ;
+    width: 900px;
+    @include flex;
+    justify-content: $flex-prop;
+    margin-top: 10px;
+}
+.inside_body_container_2_2_1{ 
+     @include Ht-wdt;
+    @include flex_2;
+    align-items:  $align-items;
+}
+.inside_body_container_2_2_2{
+    @include Ht-wdt;
+    @include flex_2;
+    align-items: $align-items;
+}
+.inside_body_container_2_2_3{
+    @include Ht-wdt;
+    @include flex_2;
+    align-items:  $align-items;
+}
+.inside_body_container_2_2_4{
+    @include Ht-wdt;
+    @include flex_2;
+    align-items: $align-items;
+}
+.inside_body_container_2_2_1_box1{
+    width: 70px;
+    height: 70px;
+    border-radius: 250px;  
+    background-color: $skyblue-color;
+    fill: white; 
+}
+.inside_body_container_2_2_1_box2{ 
+    width: 150px;
+    height: 25px;
+    @include font;
+    text-align: $alignment;
+    margin-top: 10px;
+}
+.inside_body_container_2_2_1_box3{
+    width: 170px;
+    height: 80px;  
+    @include font_size;
+    margin-left: 25px;
+}
+.body_container_3{  
+   width:  $width;
+    height: 350px;
+    @include flex_2;
+    justify-content: $flex-prop;
+    align-items:  $align-items;
+    background-color:$black-bg-color;
+    .body_container_3_1{ 
+        width: 900px; 
+        height:  $ht;
+        @include flex;
+        justify-content: $flex-prop3;  
+        .body_container_3_1_1{   
+            width: 240px;
+            height: 30px; 
+            @include font;
+            color: $orange-color;
+            padding: 5px;
+            font-size: 21px;
+        }
+        .body_container_3_1_2{
+            background-color: $skyblue-color;
+            width: 110px;
+            text-align: $alignment;
+            height: 30px;
+            @include font;
+            font-size: 15px;
+            border-radius: 5px;
+            background-color: $skyblue-color;
+            color: white;
+            padding: 1px;
+        }  
+    }
+    .body_container_3_2{   
+        width: 900px;
+        height: 200px;
+        @include flex;
+        justify-content: $flex-prop3;  
+        .body_container_3_2_1{ 
+            @include hight-width;
+            @include box;
+        }
+        .body_container_3_2_2{  
+            @include hight-width; 
+            @include box;
+        }
+        .body_container_3_2_3{  
+            @include hight-width;
+            @include box;
+        }
+    }    
+}
+.body_container_4{
+    height:260px;
+    width:  $width;
+    @include flex_2;
+     align-items:  $align-items;
+     justify-content: $flex-prop;
+     .body_container_4_1{
+        font-size: 22px;
+        height: 40px;
+        width: 250px;
+        margin-top: 10px;
+        margin-left: 70px;
+        color: $skyblue-color;
+        @include font;
+    }
+    .body_container_4_2{
+        height: 40px;
+        width: 850px;
+        @include font;
+        font-size: 14px;
+        margin-left: 35px;
+    }
+    .body_container_4_3{
+        height: 170px;
+        width: 900px;
+        @include flex;
+        justify-content: $flex-prop;
+        .body_container_4_3_1{ 
+            height: 160px;
+            width: 170px;   
+            @include flex_2;
+            justify-content: $flex-prop2;
+            @include txt;
+        }
+    }
+} 
+.body_container_5{
+    border: 1px solid rgba(130, 117, 117, 0.619);
+    width: $width;
+    height: 250px;
+    @include flex_2;
+    gap: 5px;
+    align-items:  $align-items;
+    .body_container_5_1{
+        font-size: 22px;
+        width:150px;
+        height:  $ht;
+        @include font;
+        color:$skyblue-color;
+        margin-top: 10px;
+    }
+    .body_container_5_2{
+        width: 900px;
+        height:  $ht;
+        @include font;
+    }
+    .body_container_5_3{  
+        width: 320px;
+        height: 30px;
+        margin-left: 120px;
+        color: $orange-color;
+        @include font;
+    }
+    .body_container_5_4{ 
+        width: 200px;
+        height:  $ht;
+        @include flex; 
+        gap: 5px;
+        margin-left: 30px;  
+        .img_box{ 
+            @include img-property;
+        }  
+    }
+} 
+.footer{
+    background-color: $black-bg-color;
+    height: 310px;
+    width: 100%;
+    @include flex;
+    justify-content: center; 
+    gap: 5px;
+    .inside_footer{ 
+        height: 310px;
+        width: 270px;  
+        .inside_footer_heading{ 
+            height: 40px;
+            width: 250px;  
+            color: $orange-color;
+             margin-top: 10px;
+            @include font;
+        }
+        .inside_footer_content{
+            border: 1px solid rgba(255, 255, 255, 0.63);
+            margin-top: 6px;
+            border-top : none;
+            border-left : none;
+            border-right : none; 
+            height: 70px;
+            width: 260px;  
+            @include flex;
+            gap : 5px;
+            .b_1{  
+            height: 43px;
+            width: 40px;
+            background-color: white;
+            border-radius: 2px;
+            }
+            .b_2{ 
+                color: rgba(255, 255, 255, 0.742); 
+                height: 70px;
+                width: 260px;
+                @include font_size;  
+                a{
+                    color : $skyblue-color;
+                }  
+            }
+            .b_2_search{ 
+                width: 232px;
+                height: 20px; 
+            }
+            .b_3_search{ 
+                width: 90px;
+                height: 20px;
+                margin-left: 140px;
+                background-color: $skyblue-color;
+                color: white;
+                text-align: center;
+                border: none;
+                border-radius: 2px;
+            }
+        }
+        }
+    } 
+    @media (min-width : 0px) and (max-width: 480px){
+        @include responsive; 
+    } 
+    @media (min-width : 481px) and (max-width: 768px){
+        @include responsive;     
+    }
+    @media (min-width : 769px) and (max-width: 1024px){
+        @include responsive;     
+    }
+    @media (min-width : 1024px) and (max-width: 1200px){
+        @include responsive;     
+    }

@@ -1,0 +1,148 @@
+@mixin img-property{
+    width: 50px;
+    height:  50px;
+    border-radius: 50px; 
+}
+@mixin txt{
+    .text_1{ 
+        height: 27px;
+        width: 150px; 
+        color: $skyblue-color;
+        @include font;
+    }
+    .text_2{  
+        height:100px;
+        width: 170px; 
+        @include font;
+        font-size: 12px;
+    }
+}
+@mixin hight-width{
+    width: 200px;
+    height: 200px; 
+} 
+@mixin font{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+@mixin font_size{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+@mixin font_2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex_2{
+    display: flex;
+    flex-direction: column;
+}
+@mixin box{
+    .box_1{ 
+        width: 195px;
+        height :140px;
+        margin-top: -10px;
+    }
+    .box_2{ 
+        width: 205px;
+        height :30px;
+        color: $orange-color;
+        @include font;
+        font-size: 20px;
+    }
+    .box_3{  
+        width: 205px;
+        height :30px;
+        @include font;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.671);
+    }
+}
+@mixin Ht-wdt{
+    width: 170px;
+    height: 200px;
+}
+@mixin responsive{
+    .header{
+        width: 10%;
+         height: 153px;
+         margin-left: 9px;
+         display: block;  
+         .header_2{  
+         margin-left: -58px;  
+          }
+         .inside_header_2{ 
+         font-size: 14px;
+         height: 5px;
+         width: 18%;
+         }
+     }
+     .body_container_1{
+         width: $wid;
+         .cont_big_text{
+             font-size: 18px;
+         }
+         .cont_small_text{
+             font-size: 8px;
+             width: 330px;
+         }
+         .cont_btn{
+             margin-left: 100px; 
+         }
+     }  
+     .body_container_2{ 
+         width: 1035px;
+         .inside_body_container_2_1{
+             margin-left: -700px; 
+         }
+     } 
+     .body_container_3{
+         width: $wid;
+         .body_container_3_1{  
+             margin-left: 650px; 
+             font-size: 2px;
+         }
+         .body_container_3_1_1{
+             font-size: 2px;
+         }
+      } 
+     .body_container_4{
+         width: $wid;   
+     } 
+     .body_container_4_1{
+         font-size: 5px;
+         width: $wid; 
+     } 
+     .body_container_4_2{
+         width: 100px;  
+     }
+     .body_container_4_3{  
+         width: $wid; 
+         margin-left: 722px; 
+     } 
+     .body_container_5{
+         width: $wid;
+     }
+     .body_container_5_2{
+         font-size: 9.5px;
+         width: 180px;
+         margin-left: 575px;
+     }    
+     .footer{
+         width: $wid;
+         display: block;
+         height: 1270px;
+     }
+     .inside_footer{ 
+         height: 60%;
+         margin-left: 10px;   
+     }
+     
+}
+
+
